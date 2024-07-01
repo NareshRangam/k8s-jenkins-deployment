@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: rangam-containers
-          image: 'kubernetes-simple-app:1.0'
+          image: 'kubernetes-simple-app:3.0'
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 9112
