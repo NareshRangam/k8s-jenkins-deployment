@@ -50,7 +50,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>kubernetes-simpleapp</finalName>
+		<finalName>kubernetes-simple-app</finalName>
 	</build>
 
 </project>
