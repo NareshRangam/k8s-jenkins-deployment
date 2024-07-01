@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rangam-deployment
+  namespace: rangam-namespace
+spec:
+  selector:
+    matchLabels:
+      app: rangam-pods-group-selectors
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: rangam-pods-group-selectors
+    spec:
+      containers:
+        - name: rangam-containers
+          image: 'kubernetes-simpleapp:2.0'
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9112

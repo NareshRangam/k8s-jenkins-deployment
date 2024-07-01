@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: rangam-service
+ namespace: rangam-namespace
+spec:
+ selector:
+  app: rangam-pods-group-selectors
+ ports:
+  - protocol: TCP
+    port: 8112
+    targetPort: 9112
+ type: NodePort
